@@ -4128,6 +4128,13 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
         :Person ;
     rdfs:comment "The direct performer or driver of the action (animate or inanimate). E.g. *John* wrote a book." .
 
+:agentInteractionStatistic a rdf:Property ;
+    rdfs:label "agentInteractionStatistic" ;
+    :domainIncludes :Person,
+        :Organization ;
+    :rangeIncludes :InteractionCounter ;
+    rdfs:comment "The number of interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService)." .
+
 :aggregateRating a rdf:Property ;
     rdfs:label "aggregateRating" ;
     :domainIncludes :Brand,
